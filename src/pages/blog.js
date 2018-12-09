@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import SEO from '../components/page/seo'
 import Template from "../components/layout/template"
 import PageBanner from '../components/banner/page-banner'
 import PostGrid from '../components/posts/post-grid'
 
 class BlogPage extends Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
       <Template location={this.props.location} >
-        <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <PageBanner title="Blog" />
-          <PostGrid posts={posts} />
-        </div>
+        <SEO title="Blog" />
+        <PageBanner title="Blog" />
+        <PostGrid posts={posts} />
       </Template>
     )
   }
@@ -35,7 +32,7 @@ export const blogQuery = graphql`
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
-            fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
+            fluid(maxWidth: 700, maxHeight: 400, resizingBehavior: SCALE) {
               ...GatsbyContentfulFluid
             }
           }

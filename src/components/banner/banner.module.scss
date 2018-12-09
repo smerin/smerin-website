@@ -1,9 +1,24 @@
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 61.8vh;
   max-height: 400px;
   background: #0cb2cf;
+  color: white;
   overflow: hidden;
+}
+
+.bannerContent {
+  text-align: center;
+}
+
+.bannerTitle {
+  font-size: 4rem;
+  text-shadow: 0 0 8px rgba(0,0,0,0.2)
+}
+.bannerSubtitle {
+  font-size: 1.25rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2)
 }

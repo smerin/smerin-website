@@ -20,7 +20,14 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
-  pathPrefix: '/gatsby-contentful-starter',
+  siteMetadata: {
+    title: "Standard title",
+    titleTemplate: "%s | George Smerin",
+    description: "This is my cool blog",
+    url: "https://agitated-torvalds-2fddae.netlify.com",
+    image: "/images/george.jpg",
+    twitterUsername: "@georgesmerin"
+  },
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',

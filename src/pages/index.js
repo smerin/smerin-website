@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
+import SEO from '../components/page/seo'
 import HomeBanner from '../components/banner/home-banner'
 import Template from '../components/layout/template'
 import PostGrid from '../components/posts/post-grid'
 
 class HomePage extends Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
       <Template location={this.props.location} >
-        <Helmet title={siteTitle} />
+        <SEO title="Homepage" />
         <HomeBanner />
         <PostGrid posts={posts} />
       </Template>

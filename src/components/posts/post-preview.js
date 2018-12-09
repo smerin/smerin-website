@@ -6,7 +6,9 @@ import styles from './post-preview.module.scss'
 const PostPreview = ({ post }) => {
   return (
     <div className={styles.preview}>
-      <Img alt={post.title} fluid={post.heroImage.fluid} />
+      <Link to={`/blog/${post.slug}`}>
+        <Img alt={post.title} fluid={post.heroImage.fluid} />
+      </Link>
       <h3 className={styles.previewTitle}>
         <Link to={`/blog/${post.slug}`}>{post.title}</Link>
       </h3>
