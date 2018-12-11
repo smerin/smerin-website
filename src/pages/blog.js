@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { Link, graphql } from 'gatsby';
-import get from 'lodash/get';
-import SEO from '../components/page/seo';
-import Template from '../components/layout/template';
-import PageBanner from '../components/banner/page-banner';
-import PostGrid from '../components/posts/post-grid';
+import React, { Component } from "react";
+import { Link, graphql } from "gatsby";
+import get from "lodash/get";
+import SEO from "../components/page/seo";
+import Template from "../components/layout/template";
+import PageBanner from "../components/banner/page-banner";
+import PostGrid from "../components/posts/post-grid";
 
 class BlogPage extends Component {
   render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges');
+    const posts = get(this, "props.data.allContentfulBlogPost.edges");
 
     return (
       <Template location={this.props.location}>

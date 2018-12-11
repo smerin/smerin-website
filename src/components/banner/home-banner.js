@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import style from './banner.module.scss';
+import React from "react";
+import { Link } from "gatsby";
+import style from "./banner.module.scss";
 
 const HomeBanner = () => {
   return (
@@ -8,7 +8,7 @@ const HomeBanner = () => {
       <div className={style.bannerContent}>
         <h1>Hello, I'm George Smerin!</h1>
         <p>
-          I'm a <Link to="/music">musician</Link> and{' '}
+          I'm a <Link to="/music">musician</Link> and{" "}
           <Link to="digital">web developer</Link> from Bristol, UK.
         </p>
       </div>

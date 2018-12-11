@@ -1,15 +1,15 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import get from 'lodash/get';
-import Img from 'gatsby-image';
-import Template from '../components/layout/template';
-import style from './blog-post.module.scss';
+import React from "react";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import get from "lodash/get";
+import Img from "gatsby-image";
+import Template from "../components/layout/template";
+import style from "./blog-post.module.scss";
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = get(this.props, 'data.contentfulBlogPost');
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const post = get(this.props, "data.contentfulBlogPost");
+    const siteTitle = get(this.props, "data.site.siteMetadata.title");
 
     return (
       <Template location={this.props.location}>
@@ -26,7 +26,7 @@ class BlogPostTemplate extends React.Component {
               </p>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: post.body.childMarkdownRemark.html,
+                  __html: post.body.childMarkdownRemark.html
                 }}
               />
             </div>

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Navigation from './navigation';
-import styles from './header.module.scss';
+import React from "react";
+import { Link } from "gatsby";
+import Navigation from "./navigation";
+import styles from "./header.module.scss";
 
 const Header = () => (
   <header className={styles.header}>

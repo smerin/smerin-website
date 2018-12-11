@@ -1,5 +1,5 @@
-import React from 'react';
-import style from './banner.module.scss';
+import React from "react";
+import style from "./banner.module.scss";
 
 const PageBanner = ({ title, subtitle }) => {
   return (

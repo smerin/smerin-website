@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import SEO from '../components/page/seo';
-import Template from '../components/layout/template';
-import PageBanner from '../components/banner/page-banner';
+import React, { Component } from "react";
+import SEO from "../components/page/seo";
+import Template from "../components/layout/template";
+import PageBanner from "../components/banner/page-banner";
 
 class MusicPage extends Component {
   render() {

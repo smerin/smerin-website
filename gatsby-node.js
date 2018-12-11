@@ -1,11 +1,11 @@
-const Promise = require('bluebird');
-const path = require('path');
+const Promise = require("bluebird");
+const path = require("path");
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js');
+    const blogPost = path.resolve("./src/templates/blog-post.js");
     resolve(
       graphql(
         `
@@ -32,8 +32,8 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/blog/${post.node.slug}/`,
             component: blogPost,
             context: {
-              slug: post.node.slug,
-            },
+              slug: post.node.slug
+            }
           });
         });
       })
