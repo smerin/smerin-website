@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import styles from "./main-menu.module.scss";
+import { menuItems } from "../../utils/menuItems";
 
-const MainMenu = ({ links }) => (
+const MainMenu = () => (
   <nav role="navigation">
     <ul className={styles.mainMenu}>
-      {links.map((link, index) => (
+      {menuItems.map((item, index) => (
         <li key={index}>
-          <Link to={link.path}>{link.title}</Link>
+          <Link to={item.path}>{item.title}</Link>
         </li>
       ))}
     </ul>

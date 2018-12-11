@@ -25,13 +25,15 @@ class MobileMenu extends Component {
         >
           Menu
         </button>
-        <ul className={styles.mobileMenu}>
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link to={link.path}>{link.title}</Link>
-            </li>
-          ))}
-        </ul>
+        {this.state.showMenu && (
+          <ul className={styles.mobileMenu}>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path}>{link.title}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </>
     );
   }
