@@ -10,6 +10,6 @@ const PageBanner = ({ title, subtitle }) => {
       </div>
     </div>
   );
-}
+};
 
 export default PageBanner;

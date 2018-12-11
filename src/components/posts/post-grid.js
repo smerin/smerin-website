@@ -11,11 +11,11 @@ const PostGrid = ({ posts }) => {
             <li key={post.slug}>
               <PostPreview post={post} />
             </li>
-          )
+          );
         })}
       </ul>
     </div>
   );
-}
+};
 
 export default PostGrid;

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
-import styles from './post-preview.module.scss'
+import React from 'react';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import styles from './post-preview.module.scss';
 
 const PostPreview = ({ post }) => {
   return (
@@ -20,6 +20,6 @@ const PostPreview = ({ post }) => {
       />
     </div>
   );
-}
+};
 
 export default PostPreview;
