@@ -7,7 +7,7 @@ const PostPreview = ({ post }) => {
   return (
     <div className={styles.preview}>
       <Link to={`/blog/${post.slug}`}>
-        <Img alt={post.title} fluid={post.heroImage.fluid} />
+        <Img alt={post.title} fluid={post.previewImage.fluid} />
       </Link>
       <h3 className={styles.previewTitle}>
         <Link to={`/blog/${post.slug}`}>{post.title}</Link>

@@ -1,3 +1,5 @@
+@import "../../styles/utilities";
+
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -5,8 +7,8 @@
   align-items: center;
   height: 61.8vh;
   max-height: 400px;
-  background: #0cb2cf;
-  color: white;
+  background: $turquoise;
+  color: $white;
   overflow: hidden;
 }
 

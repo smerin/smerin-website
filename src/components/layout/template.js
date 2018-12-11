@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import base from "../styles/base.scss";
+import base from "../../styles/base.scss";
 import Header from "./header";
 
 class Template extends React.Component {

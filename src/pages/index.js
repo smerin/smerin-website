@@ -69,7 +69,7 @@ export const homeQuery = graphql`
           slug
           publishDate(formatString: "MMMM Do, YYYY")
           tags
-          heroImage {
+          previewImage {
             fluid(maxWidth: 700, maxHeight: 400, resizingBehavior: SCALE) {
               ...GatsbyContentfulFluid
             }

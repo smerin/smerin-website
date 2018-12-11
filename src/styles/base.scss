@@ -1,0 +1,48 @@
+@import "./utilities";
+
+body {
+  color: $charcoal;
+  background: $white;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: currentColor;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include breakpoint(tablet) {
+    padding: 0 2rem;
+  }
+}
+
+.content {
+  margin: 2rem 0;
+
+  @include breakpoint(tablet) {
+    padding-left: 2rem;
+    padding-right: 6rem;
+  }
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
