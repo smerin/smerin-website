@@ -17,7 +17,7 @@ class Template extends React.Component {
 
     return (
       <div>
-        <Menu right>
+        <Menu width={300} right>
           {menuItems.map((item, index) => (
             <Link key={index} to={item.path}>
               {item.title}

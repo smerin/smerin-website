@@ -1,16 +1,21 @@
 import React, { Component } from "react";
+import { graphql } from "gatsby";
 import SEO from "../components/page/seo";
 import Template from "../components/layout/template";
 import PageBanner from "../components/banner/page-banner";
 
 class DigitalPage extends Component {
   render() {
+    const { banner, image } = this.props.data;
+
     return (
       <Template location={this.props.location}>
         <SEO title="Digital" />
         <PageBanner
           title="Digital"
           subtitle="I like to make websites, hit me up!"
+          banner={banner}
+          image={image}
         />
         <div className="container">
           <div className="content">
@@ -32,3 +37,29 @@ class DigitalPage extends Component {
 }
 
 export default DigitalPage;
+
+export const digitalBannerQuery = graphql`
+  query {
+    banner: file(relativePath: { eq: "digital-banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fixedImage: file(relativePath: { eq: "digital-banner-cutout.png" }) {
+      childImageSharp {
+        fixed(width: 600, height: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    image: file(relativePath: { eq: "digital-banner-cutout.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

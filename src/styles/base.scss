@@ -47,6 +47,7 @@ a {
   }
 }
 
+/* Styling for mobile menu */
 .bm-burger-button {
   position: fixed;
   width: 2rem;
@@ -57,48 +58,55 @@ a {
   @include breakpoint(tablet) {
     display: none;
   }
-}
 
-/* Color/shape of burger icon bars */
+  &:hover {
+    .bm-burger-bars {
+      background: $turquoise;
+    }
+  }
+}
 .bm-burger-bars {
-  background: #373a47;
+  background: $charcoal;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
 }
-
-/* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
+  top: 0.75rem !important;
+  right: 1rem !important;
+  height: 48px !important;
+  width: 48px !important;
 
-/* Color/shape of close button cross */
+  > span {
+    top: 0 !important;
+    right: 26px !important;
+  }
+}
 .bm-cross {
-  background: #bdc3c7;
+  background: $white;
+  width: 6px !important;
+  height: 48px !important;
 }
-
-/* General sidebar styles */
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
-
-/* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
 }
-
-/* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  padding: 0.5rem;
 }
-
-/* Individual item */
 .bm-item {
   display: inline-block;
-}
+  padding: 1rem;
+  font-family: $headingFont;
+  color: $white;
 
-/* Styling of overlay */
+  &:hover {
+    color: $ice;
+  }
+}
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
