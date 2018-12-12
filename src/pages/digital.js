@@ -47,14 +47,7 @@ export const digitalBannerQuery = graphql`
         }
       }
     }
-    fixedImage: file(relativePath: { eq: "digital-banner-cutout.png" }) {
-      childImageSharp {
-        fixed(width: 600, height: 300) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    image: file(relativePath: { eq: "digital-banner-cutout.png" }) {
+    image: file(relativePath: { eq: "digital-banner-image-turquoise.png" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
