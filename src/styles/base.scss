@@ -18,6 +18,7 @@ a {
 }
 
 .container {
+  width: 100%;
   min-width: 320px;
   max-width: 1080px;
   margin: 0 auto;
@@ -30,11 +31,7 @@ a {
 
 .content {
   margin: 2rem 0;
-
-  @include breakpoint(tablet) {
-    padding-left: 2rem;
-    padding-right: 6rem;
-  }
+  max-width: 40rem;
 }
 
 .list-inline {

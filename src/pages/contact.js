@@ -1,14 +1,17 @@
 import React, { Component } from "react";
+import { graphql } from "gatsby";
 import SEO from "../components/page/seo";
 import Template from "../components/layout/template";
 import PageBanner from "../components/banner/page-banner";
 
 class ContactPage extends Component {
   render() {
+    const { banner } = this.props.data;
+
     return (
       <Template location={this.props.location}>
         <SEO title="Contact" />
-        <PageBanner title="Contact" />
+        <PageBanner title="Contact" banner={banner} />
         <div className="container">
           <div className="content">
             <h1>Contact me!</h1>
@@ -29,3 +32,16 @@ class ContactPage extends Component {
 }
 
 export default ContactPage;
+
+export const contactBannerQuery = graphql`
+  query {
+    banner: file(relativePath: { eq: "contact-banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 3600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+

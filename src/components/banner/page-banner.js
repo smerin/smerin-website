@@ -2,20 +2,16 @@ import React from "react";
 import Img from "gatsby-image";
 import style from "./banner.module.scss";
 
-const PageBanner = ({ title, subtitle, image }) => {
+const PageBanner = ({ title, subtitle, banner }) => {
   return (
     <div className={style.banner}>
-      {image && (
-        <div className={style.bannerImage}>
-          <Img fluid={image.childImageSharp.fluid} />
-        </div>
+      {banner && (
+        <Img fluid={banner.childImageSharp.fluid} />
       )}
-      <div className="container">
-        <div className={style.bannerContent}>
-          <div>
-            <h2 className={style.bannerTitle}>{title}</h2>
-            {subtitle && <p className={style.bannerSubtitle}>{subtitle}</p>}
-          </div>
+      <div className={style.bannerContent}>
+        <div className="container">
+          <h2 className={style.bannerTitle}>{title}</h2>
+          {subtitle && <p className={style.bannerSubtitle}>{subtitle}</p>}
         </div>
       </div>
     </div>

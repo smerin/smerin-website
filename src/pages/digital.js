@@ -6,16 +6,15 @@ import PageBanner from "../components/banner/page-banner";
 
 class DigitalPage extends Component {
   render() {
-    const { banner, image } = this.props.data;
+    const { banner } = this.props.data;
 
     return (
       <Template location={this.props.location}>
         <SEO title="Digital" />
         <PageBanner
           title="Digital"
-          subtitle="I like to make websites, hit me up!"
+          subtitle="I design and build websites, and love learning the best new tools and frameworks."
           banner={banner}
-          image={image}
         />
         <div className="container">
           <div className="content">
@@ -42,14 +41,7 @@ export const digitalBannerQuery = graphql`
   query {
     banner: file(relativePath: { eq: "digital-banner.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    image: file(relativePath: { eq: "digital-banner-image-turquoise.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 3600) {
           ...GatsbyImageSharpFluid
         }
       }

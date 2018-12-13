@@ -2,18 +2,19 @@ import React, { Component } from "react";
 import { Link, graphql } from "gatsby";
 import get from "lodash/get";
 import SEO from "../components/page/seo";
-import HomeBanner from "../components/banner/home-banner";
+import PageBanner from "../components/banner/page-banner";
 import Template from "../components/layout/template";
 import PostGrid from "../components/posts/post-grid";
 
 class HomePage extends Component {
   render() {
+    const { banner } = this.props.data;
     const posts = get(this, "props.data.allContentfulBlogPost.edges");
 
     return (
       <Template location={this.props.location}>
         <SEO title="Homepage" />
-        <HomeBanner />
+        <PageBanner title="Hello!" subtitle="I'm George Smerin, musician and web developer from Bristol." banner={banner} />
         <div className="container">
           <div className="content">
             <h2>My story so far...</h2>
@@ -79,6 +80,13 @@ export const homeQuery = graphql`
               html
             }
           }
+        }
+      }
+    }
+    banner: file(relativePath: { eq: "home-banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2400) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

@@ -1,16 +1,20 @@
 import React, { Component } from "react";
+import { graphql } from "gatsby";
 import SEO from "../components/page/seo";
 import Template from "../components/layout/template";
 import PageBanner from "../components/banner/page-banner";
 
 class MusicPage extends Component {
   render() {
+    const { banner } = this.props.data;
+
     return (
       <Template location={this.props.location}>
         <SEO title="Music" />
         <PageBanner
           title="Music"
-          subtitle="Guitarist, kora player & world music lover"
+          subtitle="I play guitar and kora, and I love music from all around the world."
+          banner={banner}
         />
         <div className="container">
           <div className="content">
@@ -32,3 +36,15 @@ class MusicPage extends Component {
 }
 
 export default MusicPage;
+
+export const musicBannerQuery = graphql`
+  query {
+    banner: file(relativePath: { eq: "music-banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
