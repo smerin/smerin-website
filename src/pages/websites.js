@@ -10,9 +10,9 @@ class DigitalPage extends Component {
 
     return (
       <Template location={this.props.location}>
-        <SEO title="Digital" />
+        <SEO title="Websites" />
         <PageBanner
-          title="Digital"
+          title="Websites"
           subtitle="I design and build websites, and love learning the best new tools and frameworks."
           banner={banner}
         />
@@ -37,9 +37,9 @@ class DigitalPage extends Component {
 
 export default DigitalPage;
 
-export const digitalBannerQuery = graphql`
+export const websitesBannerQuery = graphql`
   query {
-    banner: file(relativePath: { eq: "digital-banner.jpg" }) {
+    banner: file(relativePath: { eq: "websites-banner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 3600) {
           ...GatsbyImageSharpFluid

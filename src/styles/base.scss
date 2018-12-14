@@ -44,6 +44,14 @@ a {
   }
 }
 
+section {
+  padding: 2rem 0;
+
+  &.yellow {
+    background: $saffron url("/background-yellow.jpg");
+  }
+}
+
 /* Styling for mobile menu */
 .bm-burger-button {
   position: fixed;
