@@ -9,6 +9,8 @@ const PostGrid = ({ title, posts }) => {
         {title && <h2>{title}</h2>}
         <ul>
           {posts.map(({ node: post }) => {
+            console.log(post);
+
             return (
               <li key={post.slug}>
                 <PostPreview post={post} />
