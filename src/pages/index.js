@@ -14,7 +14,7 @@ class HomePage extends Component {
 
     return (
       <Template location={this.props.location}>
-        <SEO title="Homepage" />
+        <SEO title="George Smerin | Musician and web developer from Bristol, UK" titleTemplate="%s" />
         <PageBanner
           title="Hello!"
           subtitle="I'm George Smerin, musician and web developer from Bristol."

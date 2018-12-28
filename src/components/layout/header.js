@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "gatsby";
 import MainMenu from "./main-menu";
 import MobileMenu from "./mobile-menu";
-import styles from "./header.module.scss";
+import style from "./header.module.scss";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={style.header}>
       <div className="container">
-        <div className={styles.headerContent}>
-          <div className={styles.headerLogo}>
+        <div className={style.headerContent}>
+          <div className={style.headerLogo}>
             <Link to="/">
               <img
                 src="/gs-logo.png"

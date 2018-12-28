@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
+import cx from "classnames";
 import { slide as Menu } from "react-burger-menu";
-import base from "../../styles/base.scss";
+import base from "../../styles/style.scss";
 import Header from "./header";
+import Footer from "./footer";
 import { menuItems } from "../../utils/menuItems";
 
 class Template extends React.Component {
@@ -15,6 +17,9 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + "/";
     }
 
+    const hideMusic = location.pathname === "/websites";
+    const hideDigital = location.pathname === "/music";
+
     return (
       <div>
         <Menu width={300} right>
@@ -26,6 +31,7 @@ class Template extends React.Component {
         </Menu>
         <Header />
         {children}
+        <Footer hideDigital={hideDigital} hideMusic={hideMusic} />
       </div>
     );
   }

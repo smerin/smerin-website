@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./content.module.scss";
+import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { EmailButton, LinkedinButton, TwitterButton } from "../shared/buttons";
 import reactIcon from "../../images/icons/react-icon.svg";
 import reduxIcon from "../../images/icons/redux-icon.svg";
 import graphqlIcon from "../../images/icons/graphql-icon.svg";
@@ -10,8 +12,7 @@ const WebsitesContent = () => (
   <div className="container">
     <div className="content">
       <h1>
-        Front-end contract JavaScript developer from Bristol, specializing in
-        React JS.
+        Front-end JavaScript developer from Bristol, specializing in React JS.
       </h1>
       <p>
         I've been designing and building websites professionally for over 12
@@ -26,21 +27,22 @@ const WebsitesContent = () => (
         disclose much of my best work, but if you'd like some examples I can
         point you in the right direction.
       </p>
-      <p>
-        If you're interested in hiring me for a project, either as a front-end
-        contract developer or on a freelance basis, please get in touch...
-      </p>
 
-      <div className="button-group">
-        <a class="button" href="mailto:gsmerin@gmail.com">
-          Email me
-        </a>
-        <a class="button" href="https://uk.linkedin.com/in/smerin">
-          LinkedIn
-        </a>
+      <div className={style.contactSection}>
+        <p>
+          If you are interested in hiring me for a project, either as a
+          front-end contract developer or on a freelance basis, please get in
+          touch:
+        </p>
+
+        <div className="button-group">
+          <EmailButton alt />
+          <LinkedinButton alt />
+          <TwitterButton alt />
+        </div>
       </div>
 
-      <h3 className={style.skillsTitle}>My key skills / interests</h3>
+      <h2 className={style.skillsTitle}>My key skills &amp; interests</h2>
       <p>
         I love learning and am fasinated by how quickly the JavaScript ecosystem
         is developing. Below are some of the technologies I have been using
@@ -49,7 +51,7 @@ const WebsitesContent = () => (
 
       <div className={style.skillsItem}>
         <img src={reactIcon} />
-        <h2>React JS</h2>
+        <h3>React JS</h3>
         <p>
           React is an open-source javascript library for developing front-end
           user interfaces. It's become immensely popular, and powers some of the
@@ -65,40 +67,48 @@ const WebsitesContent = () => (
 
       <div className={style.skillsItem}>
         <img src={reduxIcon} />
-        <h2>Redux</h2>
-        <p>Redux is a state-management tool, that has</p>
+        <h3>Redux</h3>
+        <p>
+          Redux is a state-management tool for JavaScript applications, and is
+          very commonly used alongside React. I used Redux extensively whilst
+          developing a complex signup process for an energy management company.
+          It is particularly useful for managing data from multiple sources, and
+          also in apps that handle a lot of user interaction.
+        </p>
       </div>
 
       <div className={style.skillsItem}>
         <img src={graphqlIcon} />
-        <h2>GraphQL</h2>
+        <h3>GraphQL</h3>
         <p>
-          In recent years I have fully embraced front-end JavaScript libraries
-          and frameworks, and React JS is now my speciality. Alongside React, I
-          have used Redux extensively for state management. Over the past few
-          months I have become particularly interested in GraphQL, and am
-          looking forward to using this much more in the future.
+          GraphQL is a language for querying an API. It gives a lot more
+          flexibility and efficiency in querying data from a database. I've used
+          it on a couple of side projects with React and either Apollo Client or
+          Gatsby on the frontend. I'm particularly excited about the future of
+          GraphQL and hope to be using it in some larger projects very soon.
         </p>
       </div>
 
       <div className={style.skillsItem}>
         <img src={nodeIcon} />
-        <h2>Node JS</h2>
+        <h3>Node.js</h3>
         <p>
-          In recent years I have fully embraced front-end JavaScript libraries
-          and frameworks, and React JS is now my speciality. Alongside React, I
-          have used Redux extensively for state management. Over the past few
-          months I have become particularly interested in GraphQL, and am
-          looking forward to using this much more in the future.
+          Node.js allows JavaScript to be run server-side. Express is a commonly
+          used framework for Node.js and I've used it to build both RESTful and
+          GraphQL APIs. I've been working hard recently on this side of my
+          skillset, which would take me into full-stack developer territory.
         </p>
       </div>
 
       <div className={style.skillsItem}>
         <img src={uxuiIcon} />
-        <h2>UX / UI design</h2>
+        <h3>UX / UI design</h3>
         <p>
           Coming from a family of architects, well-considered user experience
-          has always been an interest of mine.
+          and design has always been an interest of mine. I'm equally happy
+          crafting user interfaces from scratch or working with designers. I
+          strongly believe that the best results come from a close collaboration
+          between design and development.
         </p>
       </div>
     </div>

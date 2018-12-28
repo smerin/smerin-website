@@ -52,27 +52,8 @@ section {
   }
 }
 
-.button-group {
-  margin: 0 0 4rem;
-
-  .button {
-    margin-right: 1rem;
-  }
-}
-.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: $turquoise;
-  color: $white;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.5s ease;
-
-  &:hover {
-    background: $tiffany;
-    color: $white;
-    cursor: pointer;
-  }
+.center {
+  text-align: center;
 }
 
 /* Styling for mobile menu */

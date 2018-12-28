@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import styles from "./mobile-menu.module.scss";
+import style from "./mobile-menu.module.scss";
 
 class MobileMenu extends Component {
   state = {
@@ -26,7 +26,7 @@ class MobileMenu extends Component {
           Menu
         </button>
         {this.state.showMenu && (
-          <ul className={styles.mobileMenu}>
+          <ul className={style.mobileMenu}>
             {links.map((link, index) => (
               <li key={index}>
                 <Link to={link.path}>{link.title}</Link>

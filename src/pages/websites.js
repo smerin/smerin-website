@@ -11,10 +11,13 @@ class DigitalPage extends Component {
 
     return (
       <Template location={this.props.location}>
-        <SEO title="Websites" />
+        <SEO
+          title="React JS / JavaScript front-end developer in Bristol"
+          description="Front-end developer specialising in React JS, JavaScript, GraphQL and Node JS. Strong UX / UI skills. Available for contract roles in Bristol or remote. Call 07887 868522 or email mail@smerin.com"
+        />
         <PageBanner
           title="Websites"
-          subtitle="I design and build websites, and love learning the best new tools and frameworks."
+          subtitle="I design and build web applications, and love learning to use all the best new tools and frameworks."
           banner={banner}
         />
         <WebsitesContent />
