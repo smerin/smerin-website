@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import SEO from "../components/page/seo";
 import Template from "../components/layout/template";
 import PageBanner from "../components/banner/page-banner";
+import MailchimpForm from "../components/shared/mailchimp";
 
 class ContactPage extends Component {
   render() {
@@ -15,6 +16,7 @@ class ContactPage extends Component {
         <div className="container">
           <div className="content">
             <h1>Contact me!</h1>
+            <MailchimpForm />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -44,4 +46,3 @@ export const contactBannerQuery = graphql`
     }
   }
 `;
-
