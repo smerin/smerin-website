@@ -1,6 +1,11 @@
 import React, { Component } from "react";
+import cx from "classnames";
 import addToMailchimp from "gatsby-plugin-mailchimp";
-import { FaPaperPlane, FaCheckCircle } from "react-icons/fa";
+import {
+  FaPaperPlane,
+  FaCheckCircle,
+  FaExclamationCircle
+} from "react-icons/fa";
 import style from "./mailchimp.module.scss";
 
 class MailchimpForm extends Component {
@@ -28,7 +33,14 @@ class MailchimpForm extends Component {
     }
   };
   render() {
-    const { email, submitting, msg } = this.state;
+    const { email, submitting, msg, result } = this.state;
+    const success = result === "success";
+    const error = result === "error";
+
+    const msgClass = cx(style.message, {
+      [style.success]: success,
+      [style.error]: error
+    });
     return (
       <div className={style.mailchimp}>
         <form className={style.form} onSubmit={e => this.handleSubmit(e)}>
@@ -42,8 +54,9 @@ class MailchimpForm extends Component {
           </fieldset>
         </form>
         {msg && (
-          <div className={style.message}>
-            <FaCheckCircle />
+          <div className={msgClass}>
+            {success && <FaCheckCircle />}
+            {error && <FaExclamationCircle />}
             <p dangerouslySetInnerHTML={{ __html: msg }} />
           </div>
         )}
