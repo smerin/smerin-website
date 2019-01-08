@@ -22,17 +22,14 @@ const WebsitesContent = () => (
         frameworks, and now consider myself a React specialist.
       </p>
       <p>
-        I've had the pleasure of working as a contract front-end developer with
-        numerous agencies and companies. As a contractor, I can't publicly
-        disclose much of my best work, but if you'd like some examples I can
-        point you in the right direction.
+        I've had the pleasure of working as a front-end developer with numerous
+        agencies and companies. I can't publicly disclose much of my best work,
+        but if you'd like some examples I can point you in the right direction.
       </p>
 
       <div className={style.contactSection}>
         <p>
-          If you are interested in hiring me for a project, either as a
-          front-end contract developer or on a freelance basis, please get in
-          touch:
+          If you are interested in hiring me for a project, please get in touch:
         </p>
 
         <div className="button-group">
@@ -81,11 +78,12 @@ const WebsitesContent = () => (
         <img src={graphqlIcon} />
         <h3>GraphQL</h3>
         <p>
-          GraphQL is a language for querying an API. It gives a lot more
-          flexibility and efficiency in querying data from a database. I've used
-          it on a couple of side projects with React and either Apollo Client or
-          Gatsby on the frontend. I'm particularly excited about the future of
-          GraphQL and hope to be using it in some larger projects very soon.
+          GraphQL is a language for querying an API. It gives a lot of
+          flexibility and efficiency when querying data from a database. I've
+          used it on a couple of side projects with React and either Apollo
+          Client or Gatsby on the frontend. I'm particularly excited about the
+          future of GraphQL and hope to be using it in some larger projects very
+          soon.
         </p>
       </div>
 

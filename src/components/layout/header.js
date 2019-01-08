@@ -19,7 +19,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <MainMenu />
+          {/* <MainMenu /> */}
         </div>
       </div>
     </header>

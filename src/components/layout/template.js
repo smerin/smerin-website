@@ -22,13 +22,13 @@ class Template extends React.Component {
 
     return (
       <div>
-        <Menu width={300} right>
+        {/* <Menu width={300} right>
           {menuItems.map((item, index) => (
             <Link key={index} to={item.path}>
               {item.title}
             </Link>
           ))}
-        </Menu>
+        </Menu> */}
         <Header />
         {children}
         <Footer hideDigital={hideDigital} hideMusic={hideMusic} />

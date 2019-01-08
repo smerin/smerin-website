@@ -18,17 +18,18 @@ const Footer = ({ hideDigital, hideMusic }) => {
       <div className="container">
         <h2>Keep in touch</h2>
 
-        {!hideMusic && (
+        {/* {!hideMusic && (
           <div className={style.buttons}>
             <h3>Music videos and updates</h3>
             <YoutubeButton />
             <FacebookButton />
             <InstagramButton />
           </div>
-        )}
+        )} */}
         {!hideDigital && (
           <div className={style.buttons}>
-            <h3>Web development enquiries</h3>
+            {/* <h3>Web development enquiries</h3> */}
+            <h3>Call me on 07887 868522 or try one of these:</h3>
             <EmailButton />
             <LinkedinButton />
             <TwitterButton />
