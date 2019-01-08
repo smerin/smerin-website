@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import cx from "classnames";
 import { slide as Menu } from "react-burger-menu";
 import base from "../../styles/style.scss";
 import Header from "./header";

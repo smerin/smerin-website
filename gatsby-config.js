@@ -51,6 +51,13 @@ module.exports = {
       options: {
         pathToConfigModule: "src/styles/typography"
       }
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://smerin.us7.list-manage.com/subscribe/post?u=a0980efdba90a553e9659ac7e&amp;id=b2e86e08f0"
+      }
     }
   ]
 };
