@@ -1,9 +1,9 @@
 let contentfulConfig;
 
-try {
-  // Load the Contentful config from the .contentful.json
-  contentfulConfig = require("./.contentful");
-} catch (_) {}
+// try {
+//   // Load the Contentful config from the .contentful.json
+//   contentfulConfig = require("./.contentful");
+// } catch (_) {}
 
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
@@ -25,7 +25,7 @@ module.exports = {
     title: "Standard title",
     titleTemplate: "%s | George Smerin",
     description: "This is my cool blog",
-    url: "https://agitated-torvalds-2fddae.netlify.com",
+    url: "https://zen-ritchie-45ddaa.netlify.com",
     image: "/images/george.jpg",
     twitterUsername: "@georgesmerin"
   },
