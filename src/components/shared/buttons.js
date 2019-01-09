@@ -15,7 +15,7 @@ export const EmailButton = ({ alt }) => {
     [style.alt]: alt
   });
   return (
-    <a className={className} href="mailto:mail@smerin.com" target="blank">
+    <a className={className} href="mailto:gsmerin@gmail.com" target="blank">
       <span className={style.icon}>
         <FaEnvelope />
       </span>
