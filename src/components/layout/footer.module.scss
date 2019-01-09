@@ -11,6 +11,14 @@
 .credits {
   border-top: 2px solid lighten($charcoal, 5%);
   padding: 1rem 0 0;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
 }
 
 .buttons {

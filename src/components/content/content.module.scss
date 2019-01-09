@@ -2,16 +2,22 @@
 
 .contactSection {
   position: relative;
-  left: -2rem;
-  width: calc(100% + 4rem);
+  left: -1rem;
+  width: calc(100% + 2rem);
   margin: 2em 0 4rem;
   padding: 2rem 2rem 1rem;
   background: $plum;
   color: $white;
-  border-left: 2rem solid darken($plum, 10%);
+  border-left: 1rem solid darken($plum, 10%);
 
   p {
     max-width: 32rem;
+  }
+
+  @include breakpoint(laptop) {
+    left: -2rem;
+    width: calc(100% + 4rem);
+    border-width: 2rem;
   }
 }
 

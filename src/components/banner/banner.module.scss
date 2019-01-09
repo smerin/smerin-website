@@ -2,7 +2,7 @@
 
 .banner {
   position: relative;
-  background: $charcoal;
+  background: darken($turquoise, 20%);
   // background: linear-gradient($turquoise, darken($turquoise, 5%));
   overflow: hidden;
 }
@@ -41,9 +41,10 @@
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
   @include breakpoint(tablet) {
-    max-width: 50%;
+    max-width: 18rem;
   }
   @include breakpoint(desktop) {
     font-size: 1.5rem;
+    max-width: 26rem;
   }
 }
