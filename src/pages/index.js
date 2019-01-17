@@ -17,7 +17,7 @@ class DigitalPage extends Component {
         />
         <PageBanner
           title="Hello!"
-          subtitle="I'm George Smerin, web developer and musician from Bristol."
+          subtitle="I'm George Smerin, web dev and musician from Bristol."
           banner={banner}
         />
         <WebsitesContent />
