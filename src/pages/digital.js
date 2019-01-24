@@ -5,7 +5,7 @@ import Template from "../components/layout/template";
 import PageBanner from "../components/banner/page-banner";
 import WebsitesContent from "../components/content/websites";
 
-class HomePage extends Component {
+class DigitalPage extends Component {
   render() {
     const { banner } = this.props.data;
 
@@ -26,11 +26,11 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default DigitalPage;
 
-export const homeBannerQuery = graphql`
+export const websitesBannerQuery = graphql`
   query {
-    banner: file(relativePath: { eq: "home-banner.jpg" }) {
+    banner: file(relativePath: { eq: "websites-banner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 3600) {
           ...GatsbyImageSharpFluid
