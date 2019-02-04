@@ -26,7 +26,7 @@ export default function BlogTemplate({ data, location }) {
       <div className="container">
         <div className="content">
           <h1>{frontmatter.title}</h1>
-          {/* <h2>{frontmatter.date}</h2> */}
+          <h2>{frontmatter.date}</h2>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -47,8 +47,8 @@ export const pageQuery = graphql`
         title
         banner {
           childImageSharp {
-            fluid {
-              src
+            fluid(maxWidth: 1800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

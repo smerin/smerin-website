@@ -1,8 +1,8 @@
 ---
-path: "/blog/alia"
-date: "2019-01-18"
-title: "Alia Abene"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+path: "/blog/watcha"
+date: "2019-01-16"
+title: "Flipper Dashboard"
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
 banner: "watcha-akonting-banner.jpg"
 seoTitle: "SEO title"
 seoDescription: "SEO description"
