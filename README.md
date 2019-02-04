@@ -1,8 +1,6 @@
 # smerin.com
 
-Personal website and blog built with [React](https://reactjs.org), [Gatsby](https://www.gatsbyjs.org/) and [Contentful](https://www.contentful.com).
-
-This project is based upon the [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter) package
+Personal website and blog built with [React](https://reactjs.org) and [Gatsby](https://www.gatsbyjs.org/)
 
 ## Crucial Commands
 
@@ -19,7 +17,3 @@ Run a production build into `./public`. The result is ready to be put on any sta
 ### `yarn run deploy`
 
 Run a production build into `./public` and publish the site to GitHub pages.
-
-### `yarn run cleanup-repository`
-
-Removes all dependencies, scripts and data from the installation script.

@@ -43,14 +43,13 @@
   },
   "homepage": "https://www.smerin.com",
   "keywords": [
-    "gatsby",
-    "contentful"
+    "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smerin/"
+    "url": "git+https://github.com/smerin/smerin-website"
   },
   "scripts": {
     "dev": "gatsby develop",
