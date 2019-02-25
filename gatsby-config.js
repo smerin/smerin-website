@@ -14,10 +14,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Standard title",
+    title: "George Smerin",
     titleTemplate: "%s | George Smerin",
-    description: "This is my cool blog",
-    url: "https://zen-ritchie-45ddaa.netlify.com",
+    description: "Music videos and lessons from all around the world",
+    url: "https://www.smerin.com",
     image: "/images/george.jpg",
     twitterUsername: "@georgesmerin"
   },
@@ -49,6 +49,12 @@ module.exports = {
       options: {
         endpoint:
           "https://smerin.us7.list-manage.com/subscribe/post?u=a0980efdba90a553e9659ac7e&amp;id=b2e86e08f0"
+      }
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-11627534-6"
       }
     }
   ]
