@@ -1,0 +1,32 @@
+.footer {
+  min-height: 10rem;
+  padding: 2rem 0 1rem;
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.credits {
+  border-top: 2px solid #3d3d3d;
+  padding: 1rem 0 0;
+}
+
+.credits a {
+  color: var(--color-white);
+}
+
+.credits a:hover {
+  color: var(--color-turquoise);
+}
+
+.buttons {
+  padding: 1rem 0;
+}
+
+.buttons h3 {
+  margin-top: 0;
+}
+
+.buttons p {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,91 @@
+.mailchimp {
+  max-width: 22rem;
+  margin: 1.5rem 0;
+}
+
+.form {
+  margin: 0 0 0.75rem;
+}
+
+.form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form fieldset[disabled] {
+  opacity: 0.5;
+}
+
+.inputs {
+  display: flex;
+}
+
+.inputs input {
+  flex: 1;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background: var(--color-lightgrey);
+  border: 0;
+}
+
+.inputs button {
+  flex: 0 0 4rem;
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  padding: 0.15rem 0.75rem 0 0.5rem;
+  background: var(--color-turquoise);
+  color: var(--color-white);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inputs button:hover {
+  background: var(--color-charcoal);
+}
+
+.inputs button svg {
+  transform: rotate(20deg);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--color-turquoise);
+  color: var(--color-white);
+}
+
+.message.success {
+  background: var(--color-tiffany);
+}
+
+.message.error {
+  background: var(--color-rose);
+  font-size: 0.75rem;
+}
+
+.message svg {
+  flex: 0 0 2rem;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message a {
+  color: var(--color-white);
+}
+
+.message a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}

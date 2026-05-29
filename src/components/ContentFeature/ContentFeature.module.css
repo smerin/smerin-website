@@ -1,0 +1,35 @@
+.feature {
+  position: relative;
+  left: -1rem;
+  width: calc(100% + 2rem);
+  margin: 2em 0 4rem;
+  padding: 2rem 2rem 1rem;
+  background: var(--color-plum);
+  color: var(--color-white);
+  border-left: 1rem solid #6e3a75;
+}
+
+.feature > *:first-child {
+  margin-top: 0;
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  max-width: 32rem;
+  margin-top: 0;
+}
+
+.feature a {
+  margin-left: 0;
+}
+
+@media (min-width: 61.25rem) {
+  .feature {
+    left: -2rem;
+    width: calc(100% + 4rem);
+    border-width: 2rem;
+  }
+}
