@@ -5,6 +5,7 @@ import { getTrackBySlug, getAllTrackSlugs } from '@/lib/tracks';
 import PlatformLogo from '@/components/PlatformLogo';
 import ActionButton from '@/components/ActionButton';
 import SocialIcons from '@/components/SocialIcons';
+import TrackLink from '@/components/TrackLink';
 import styles from './page.module.css';
 
 interface TrackPageProps {
@@ -59,16 +60,17 @@ export default async function TrackPage({ params }: TrackPageProps) {
 
         <div className={styles.links}>
           {track.links.map((link) => (
-            <a
+            <TrackLink
               key={link.platform}
               href={link.url}
+              platform={link.platform}
               className={styles.linkRow}
             >
               <span className={styles.logoWrapper}>
                 <PlatformLogo platform={link.icon} height={36} />
               </span>
               <ActionButton action={link.action} className={styles.actionButton} />
-            </a>
+            </TrackLink>
           ))}
         </div>
 
