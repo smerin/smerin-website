@@ -17,7 +17,7 @@ export default function MusicPage() {
       <PageBanner
         title="Music"
         subtitle="Join me on a journey in discovering music from around the world!"
-        bannerImage="/images/music-banner.jpg"
+        bannerImage="/images/camera-banner.jpg"
       />
       <div className="container">
         <div className="content">

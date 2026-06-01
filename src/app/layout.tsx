@@ -19,11 +19,11 @@ const mulish = Mulish({
 
 export const metadata: Metadata = {
   title: {
-    default: 'George Smerin | Musician and web developer from Bristol, UK',
+    default: 'George Smerin | Musician and producer from Bristol, UK',
     template: '%s | George Smerin',
   },
   description:
-    'Welcome to the website of George Smerin, musician and web developer from Bristol (UK). Read all about my recent adventures in music and technology.',
+    'Welcome to the website of George Smerin, musician and producer from Bristol (UK).',
   metadataBase: new URL('https://smerin.com'),
   openGraph: {
     type: 'website',
