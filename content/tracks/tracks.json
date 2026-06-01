@@ -1,0 +1,32 @@
+{
+  "tracks": [
+    {
+      "slug": "latitudes",
+      "title": "Latitudes",
+      "artist": "Smerin",
+      "releaseDate": "2026-06-03",
+      "coverArt": "/images/tracks/latitudes-cover.png",
+      "description": "Dreamy electronica with ethereal ronroco",
+      "links": [
+        {
+          "platform": "Spotify",
+          "url": "https://open.spotify.com/track/5bhdmry4Sdv9nDR41r3Qwp",
+          "icon": "spotify",
+          "action": "play"
+        },
+        {
+          "platform": "Apple Music",
+          "url": "https://music.apple.com/gb/song/mad-world-kora-version/1486311853",
+          "icon": "apple",
+          "action": "play"
+        },
+        {
+          "platform": "Bandcamp",
+          "url": "https://smerin.bandcamp.com/track/mad-world-kora-version",
+          "icon": "bandcamp",
+          "action": "buy"
+        }
+      ]
+    }
+  ]
+}

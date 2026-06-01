@@ -1,8 +1,5 @@
 import type { Metadata } from 'next';
 import { Merriweather, Mulish } from 'next/font/google';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import MobileMenu from '@/components/MobileMenu';
 import './globals.css';
 
 const merriweather = Merriweather({
@@ -45,10 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${merriweather.variable} ${mulish.variable}`}>
       <body>
-        <MobileMenu />
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

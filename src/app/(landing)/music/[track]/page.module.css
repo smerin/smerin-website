@@ -1,0 +1,116 @@
+.page {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(175deg, #03E9CE 0%, #014D55 100%);
+  /* background: linear-gradient(175deg, #01A288 0%, #016260 100%); */
+  /* background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-black) 100%); */
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.coverArt {
+  margin-bottom: 0.25rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.coverArt img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 0.25rem;
+}
+
+.artist {
+  font-size: 1.125rem;
+  color: var(--color-lightgrey);
+  margin: 0 0 1rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--color-dove);
+  margin: 0 0 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6rem;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem 0.5rem 0.75rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--color-white);
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  background: var(--color-rose);
+}
+
+.linkRow:hover .actionButton {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.875rem;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  transition: all 0.2s ease;
+}
+
+.socials a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}

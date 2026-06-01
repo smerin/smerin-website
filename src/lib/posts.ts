@@ -92,17 +92,20 @@ export function getPostBySlug(slug: string): Post | null {
     // Check if this post's path matches the slug
     const postSlug = frontmatter.path.replace(/^\//, '');
     if (postSlug === slug) {
-      // Update banner and preview image paths
-      if (frontmatter.banner) {
-        frontmatter.banner = `/images/blog/${folder}/${frontmatter.banner}`;
-      }
-      if (frontmatter.previewImage) {
-        frontmatter.previewImage = `/images/blog/${folder}/${frontmatter.previewImage}`;
-      }
+      // Create new frontmatter with updated image paths (don't mutate original)
+      const updatedFrontmatter: PostFrontmatter = {
+        ...frontmatter,
+        banner: frontmatter.banner
+          ? `/images/blog/${folder}/${frontmatter.banner}`
+          : undefined,
+        previewImage: frontmatter.previewImage
+          ? `/images/blog/${folder}/${frontmatter.previewImage}`
+          : undefined,
+      };
 
       return {
         slug,
-        frontmatter,
+        frontmatter: updatedFrontmatter,
         content,
       };
     }
