@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { trackEvent } from 'fathom-client';
 import {
   FaArrowRight,
   FaLinkedin,
@@ -34,7 +37,13 @@ export function LinkButton({ alt, url, children }: LinkButtonProps) {
 export function EmailButton({ alt }: ButtonProps) {
   const className = alt ? `${styles.button} ${styles.alt}` : styles.button;
   return (
-    <a className={className} href="mailto:mail@smerin.com" target="_blank" rel="noopener noreferrer">
+    <a
+      className={className}
+      href="mailto:mail@smerin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => trackEvent('Email Click')}
+    >
       <span className={styles.icon}>
         <FaEnvelope />
       </span>
@@ -51,6 +60,7 @@ export function LinkedinButton({ alt }: ButtonProps) {
       href="https://uk.linkedin.com/in/smerin"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('LinkedIn Click')}
     >
       <span className={styles.icon}>
         <FaLinkedin />
@@ -68,6 +78,7 @@ export function TwitterButton({ alt }: ButtonProps) {
       href="https://twitter.com/smerindigital"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('Twitter Click')}
     >
       <span className={styles.icon}>
         <FaTwitter />
@@ -85,6 +96,7 @@ export function InstagramButton({ alt }: ButtonProps) {
       href="https://www.instagram.com/smerin/"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('Instagram Click')}
     >
       <span className={styles.icon}>
         <FaInstagram />
@@ -102,6 +114,7 @@ export function YoutubeButton({ alt }: ButtonProps) {
       href="https://www.youtube.com/smerin"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('YouTube Click')}
     >
       <span className={styles.icon}>
         <FaYoutube />
@@ -119,6 +132,7 @@ export function FacebookButton({ alt }: ButtonProps) {
       href="https://www.facebook.com/smerin"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackEvent('Facebook Click')}
     >
       <span className={styles.icon}>
         <FaFacebook />

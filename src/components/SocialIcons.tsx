@@ -1,3 +1,6 @@
+'use client';
+
+import { trackEvent } from 'fathom-client';
 import { FaInstagram, FaYoutube, FaFacebookF, FaGlobe, FaEnvelope } from 'react-icons/fa';
 
 interface SocialIconsProps {
@@ -9,7 +12,7 @@ const socials = [
   { icon: FaInstagram, url: 'https://www.instagram.com/smerin/', label: 'Instagram', external: true },
   { icon: FaYoutube, url: 'https://www.youtube.com/smerin', label: 'YouTube', external: true },
   { icon: FaFacebookF, url: 'https://www.facebook.com/smerin', label: 'Facebook', external: true },
-  { icon: FaEnvelope, url: 'mailto:george@smerin.com', label: 'Email', external: false },
+  { icon: FaEnvelope, url: 'mailto:george@smerin.com', label: 'Email', external: true },
 ];
 
 export default function SocialIcons({ className }: SocialIconsProps) {
@@ -21,6 +24,7 @@ export default function SocialIcons({ className }: SocialIconsProps) {
           href={url}
           {...(external && { target: '_blank', rel: 'noopener noreferrer' })}
           aria-label={label}
+          onClick={() => external && trackEvent(`${label} Click`)}
         >
           <Icon size={18} />
         </a>
