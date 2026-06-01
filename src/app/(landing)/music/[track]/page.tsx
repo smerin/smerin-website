@@ -5,6 +5,8 @@ import { getTrackBySlug, getAllTrackSlugs } from '@/lib/tracks';
 import PlatformLogo from '@/components/PlatformLogo';
 import ActionButton from '@/components/ActionButton';
 import SocialIcons from '@/components/SocialIcons';
+import SupportModal from '@/components/SupportModal';
+import TestButton from '@/components/TestButton';
 import TrackLink from '@/components/TrackLink';
 import styles from './page.module.css';
 
@@ -72,6 +74,8 @@ export default async function TrackPage({ params }: TrackPageProps) {
               <ActionButton action={link.action} className={styles.actionButton} />
             </TrackLink>
           ))}
+          <SupportModal buttonClassName={styles.supportButton} />
+          <TestButton />
         </div>
 
         <SocialIcons className={styles.socials} />

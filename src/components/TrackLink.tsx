@@ -15,7 +15,7 @@ export default function TrackLink({ href, platform, className, children }: Track
   };
 
   return (
-    <a href={href} className={className} onClick={handleClick}>
+    <a href={href} className={className} onClick={handleClick} target="_blank">
       {children}
     </a>
   );

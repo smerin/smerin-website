@@ -45,6 +45,7 @@ export default function RootLayout({
       <body>
         <FathomAnalytics />
         {children}
+        <div id="modal-root" />
       </body>
     </html>
   );
