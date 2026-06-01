@@ -18,14 +18,7 @@ export default function Footer() {
           <EmailButton />
         </div>
         <div className={styles.credits}>
-          This website built with love in{' '}
-          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-            React
-          </a>{' '}
-          &amp;{' '}
-          <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
-            Next.js
-          </a>
+          <p className={styles.copyright}>© {new Date().getFullYear()} George Smerin</p>
         </div>
       </div>
     </footer>

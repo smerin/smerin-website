@@ -19,6 +19,12 @@
   color: var(--color-turquoise);
 }
 
+.copyright {
+  font-size: 0.75rem;
+  text-align: right;
+  margin: 0;
+}
+
 .buttons {
   padding: 1rem 0;
 }
