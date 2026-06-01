@@ -270,10 +270,6 @@ blockquote p {
    Buttons
    ========================================================================== */
 
-.button-group .button {
-  /* margin-right: 1rem; */
-}
-
 .button {
   position: relative;
   display: inline-block;

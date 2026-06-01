@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Merriweather, Mulish } from 'next/font/google';
 import './globals.css';
+import { FathomAnalytics } from './fathom';
 
 const merriweather = Merriweather({
   weight: ['400', '700'],
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${merriweather.variable} ${mulish.variable}`}>
       <body>
+        <FathomAnalytics />
         {children}
       </body>
     </html>
