@@ -1,13 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { IoGiftSharp } from 'react-icons/io5';
+
 import { getTrackBySlug, getAllTrackSlugs } from '@/lib/tracks';
-import PlatformLogo from '@/components/PlatformLogo';
+
 import ActionButton from '@/components/ActionButton';
+import PlatformLogo from '@/components/PlatformLogo';
 import SocialIcons from '@/components/SocialIcons';
-import SupportModal from '@/components/SupportModal';
-import TestButton from '@/components/TestButton';
 import TrackLink from '@/components/TrackLink';
+
 import styles from './page.module.css';
 
 interface TrackPageProps {
@@ -66,7 +68,7 @@ export default async function TrackPage({ params }: TrackPageProps) {
               key={link.platform}
               href={link.url}
               platform={link.platform}
-              className={styles.linkRow}
+              className={styles.platformLink}
             >
               <span className={styles.logoWrapper}>
                 <PlatformLogo platform={link.icon} height={36} />
@@ -74,8 +76,14 @@ export default async function TrackPage({ params }: TrackPageProps) {
               <ActionButton action={link.action} className={styles.actionButton} />
             </TrackLink>
           ))}
-          <SupportModal buttonClassName={styles.supportButton} />
-          <TestButton />
+          <TrackLink
+            href="https://donate.stripe.com/fZu6oJ7SJ6x5aRhdYJ0x200"
+            platform="Stripe"
+            className={styles.supportButton}
+          >
+            <IoGiftSharp size={20} />
+            Support my work
+          </TrackLink>
         </div>
 
         <SocialIcons className={styles.socials} />
