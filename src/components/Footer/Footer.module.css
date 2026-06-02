@@ -7,8 +7,18 @@
 }
 
 .credits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   border-top: 2px solid #3d3d3d;
   padding: 1rem 0 0;
+}
+
+@media (min-width: 48.75rem) {
+  .credits {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .credits a {
@@ -19,9 +29,13 @@
   color: var(--color-turquoise);
 }
 
+.contact {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
 .copyright {
   font-size: 0.75rem;
-  text-align: right;
   margin: 0;
 }
 

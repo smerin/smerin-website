@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PageBanner from '@/components/PageBanner';
+import LatestRelease from '@/components/LatestRelease';
 import PostGrid from '@/components/PostGrid';
 import { getAllPosts } from '@/lib/posts';
 
@@ -22,6 +23,7 @@ export default function HomePage() {
         subtitle="Musician and producer from Bristol, UK"
         bannerImage="/images/guitar-banner.jpg"
       />
+      <LatestRelease />
       <PostGrid posts={posts} title="Latest from the blog" />
     </>
   );

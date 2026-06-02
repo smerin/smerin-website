@@ -15,6 +15,7 @@ export interface Track {
   title: string;
   artist: string;
   releaseDate: string;
+  published: boolean;
   coverArt: string;
   description?: string;
   links: TrackLink[];
@@ -47,4 +48,9 @@ export function getTrackBySlug(slug: string): Track | null {
 export function getAllTrackSlugs(): string[] {
   const data = getTracksData();
   return data.tracks.map((track) => track.slug);
+}
+
+export function getLatestTrack(): Track | null {
+  const tracks = getAllTracks().filter((track) => track.published);
+  return tracks.length > 0 ? tracks[0] : null;
 }

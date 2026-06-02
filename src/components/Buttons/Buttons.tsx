@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import cx from 'classnames';
 import { trackEvent } from 'fathom-client';
 import {
   FaArrowRight,
@@ -20,12 +21,17 @@ interface ButtonProps {
 interface LinkButtonProps extends ButtonProps {
   url: string;
   children: React.ReactNode;
+  className?: string;
 }
 
-export function LinkButton({ alt, url, children }: LinkButtonProps) {
-  const className = alt ? `${styles.button} ${styles.alt}` : styles.button;
+export function LinkButton({ alt, url, children, className }: LinkButtonProps) {
+  const isExternal = url.startsWith('http://') || url.startsWith('https://');
   return (
-    <Link className={className} href={url} target="_blank">
+    <Link
+      className={cx(styles.button, alt && styles.alt, className)}
+      href={url}
+      {...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })}
+    >
       <span className={styles.icon}>
         <FaArrowRight />
       </span>

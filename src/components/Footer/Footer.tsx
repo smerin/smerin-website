@@ -19,6 +19,7 @@ export default function Footer() {
         </div>
         <div className={styles.credits}>
           <p className={styles.copyright}>© {new Date().getFullYear()} George Smerin</p>
+          <p className={styles.contact}>Contact: <a href="mailto:george@smerin.com">george@smerin.com</a></p>
         </div>
       </div>
     </footer>

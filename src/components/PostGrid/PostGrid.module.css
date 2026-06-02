@@ -9,8 +9,8 @@
 }
 
 .postGrid h2 {
-  text-align: center;
   margin: 1rem 0 2rem;
+  text-align: center;
 }
 
 @media (min-width: 48.75rem) {

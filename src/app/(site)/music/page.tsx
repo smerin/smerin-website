@@ -44,7 +44,7 @@ export default function MusicPage() {
             After picking up the Spanish guitar aged 13, I quickly became
             fascinated by choro music from Brazil. My love of music from all
             around the world had begun! In 2001, I founded{' '}
-            <a href="http://www.smerins.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://smerins.bandcamp.com/music" target="_blank" rel="noopener noreferrer">
               Smerin&apos;s Anti-Social Club
             </a>{' '}
             with the same group of friends that still play in the band to this
