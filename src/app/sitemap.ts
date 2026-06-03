@@ -38,12 +38,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Music track routes (only published tracks)
   const tracks = getAllTracks().filter((track) => track.published);
-  const trackRoutes: MetadataRoute.Sitemap = tracks.map((track) => ({
+  const musicRoutes: MetadataRoute.Sitemap = tracks.map((track) => ({
     url: `${BASE_URL}/music/${track.slug}`,
     lastModified: new Date(track.releaseDate),
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...trackRoutes, ...blogRoutes];
+  // Listen routes (streaming links landing pages)
+  const listenRoutes: MetadataRoute.Sitemap = tracks.map((track) => ({
+    url: `${BASE_URL}/listen/${track.slug}`,
+    lastModified: new Date(track.releaseDate),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...musicRoutes, ...listenRoutes, ...blogRoutes];
 }

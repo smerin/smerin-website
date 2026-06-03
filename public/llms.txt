@@ -47,6 +47,7 @@ For inquiries, visit https://smerin.com
 
 - `/` - Homepage with latest releases and blog posts
 - `/music` - Music page with background and streaming links
-- `/music/[track]` - Individual track landing pages
+- `/music/[track]` - Individual track pages with description and listen link
+- `/listen/[track]` - Track landing pages with streaming platform links
 - `/websites` - Web development portfolio
 - `/[slug]` - Blog posts about music and travel
