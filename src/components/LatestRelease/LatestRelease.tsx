@@ -35,7 +35,7 @@ export default function LatestRelease() {
             {track.description && (
               <p className={styles.description}>{track.description}</p>
             )}
-            <LinkButton url={`/music/${track.slug}`} className={styles.button}>Listen Now</LinkButton>
+            <LinkButton url={`/listen/${track.slug}`} className={styles.button}>Listen Now</LinkButton>
           </div>
         </div>
       </div>
