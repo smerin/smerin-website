@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: TrackPageProps): Promise<Meta
     },
     openGraph: {
       type: 'music.song',
+      url: `/music/${slug}`,
       images: track.coverArt
         ? [
             {
