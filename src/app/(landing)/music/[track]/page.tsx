@@ -40,12 +40,12 @@ export async function generateMetadata({ params }: TrackPageProps): Promise<Meta
     openGraph: {
       type: 'music.song',
       url: `/music/${slug}`,
-      images: track.coverArt
+      images: track.ogImage
         ? [
             {
-              url: `/_next/image?url=${encodeURIComponent(track.coverArt)}&w=1200&q=80`,
-              width: 1200,
-              height: 1200,
+              url: track.ogImage,
+              width: 800,
+              height: 800,
               alt: `${track.title} cover art`,
             },
           ]

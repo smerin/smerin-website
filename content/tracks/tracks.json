@@ -1,12 +1,13 @@
 {
   "tracks": [
     {
-      "slug": "latitudes-test",
+      "slug": "latitudes-test-2",
       "title": "Latitudes",
       "artist": "Smerin",
       "releaseDate": "2026-06-03",
       "published": true,
       "coverArt": "/images/tracks/latitudes-cover.png",
+      "ogImage": "/images/tracks/latitudes-cover-web.jpg",
       "description": "Latitudes is a dreamy electronic track built around the ronroco, a beautifully resonant instrument from South America.",
       "teaser": "Dreamy electronica with ethereal ronroco",
       "links": [

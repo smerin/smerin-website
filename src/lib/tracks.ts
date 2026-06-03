@@ -17,6 +17,7 @@ export interface Track {
   releaseDate: string;
   published: boolean;
   coverArt: string;
+  ogImage?: string;
   description?: string;
   teaser?: string;
   links: TrackLink[];
