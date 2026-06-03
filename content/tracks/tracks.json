@@ -12,19 +12,19 @@
       "links": [
         {
           "platform": "Spotify",
-          "url": "https://open.spotify.com/track/5bhdmry4Sdv9nDR41r3Qwp",
+          "url": "https://open.spotify.com/track/1d1Xq47rUCi0jWHeoAjAkV",
           "icon": "spotify",
           "action": "play"
         },
         {
           "platform": "Apple Music",
-          "url": "https://music.apple.com/gb/song/mad-world-kora-version/1486311853",
+          "url": "https://music.apple.com/gb/album/latitudes/1895664818",
           "icon": "apple",
           "action": "play"
         },
         {
           "platform": "Bandcamp",
-          "url": "https://smerin.bandcamp.com/track/mad-world-kora-version",
+          "url": "https://smerin.bandcamp.com/track/latitudes",
           "icon": "bandcamp",
           "action": "buy"
         }

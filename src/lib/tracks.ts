@@ -18,6 +18,7 @@ export interface Track {
   published: boolean;
   coverArt: string;
   description?: string;
+  teaser?: string;
   links: TrackLink[];
 }
 
