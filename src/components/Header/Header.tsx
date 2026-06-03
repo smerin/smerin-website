@@ -12,7 +12,7 @@ export default function Header() {
             <Link href="/">
               <Image
                 src="/images/gs-logo.png"
-                alt="George Smerin logo"
+                alt="Smerin logo"
                 width={170}
                 height={170}
                 priority

@@ -34,6 +34,9 @@ export async function generateMetadata({ params }: TrackPageProps): Promise<Meta
   return {
     title: `${track.title} - ${track.artist}`,
     description: track.teaser || `Listen to ${track.title} by ${track.artist}`,
+    alternates: {
+      canonical: `/music/${slug}`,
+    },
     openGraph: {
       type: 'music.song',
       images: track.coverArt ? [track.coverArt] : [],

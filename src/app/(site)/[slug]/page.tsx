@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   return {
     title: post.frontmatter.seoTitle || post.frontmatter.title,
     description: post.frontmatter.seoDescription || post.frontmatter.excerpt,
+    alternates: {
+      canonical: `/${slug}`,
+    },
     openGraph: {
       type: 'article',
       images: post.frontmatter.previewImage ? [post.frontmatter.previewImage] : [],

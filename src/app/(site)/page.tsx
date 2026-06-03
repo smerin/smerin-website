@@ -5,9 +5,12 @@ import PostGrid from '@/components/PostGrid';
 import { getAllPosts } from '@/lib/posts';
 
 export const metadata: Metadata = {
-  title: 'George Smerin | Musician and producer from Bristol, UK',
+  title: 'Smerin | Musician and producer from Bristol, UK',
   description:
-    'Welcome to the website of George Smerin, musician and producer from Bristol (UK).',
+    'Welcome to the website of Smerin, musician and producer from Bristol (UK).',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     images: ['/images/preview/home-preview.jpg'],
   },
@@ -16,7 +19,7 @@ export const metadata: Metadata = {
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'George Smerin',
+  name: 'Smerin',
   url: 'https://smerin.com',
   image: 'https://smerin.com/images/preview/home-preview.jpg',
   jobTitle: 'Musician and Producer',
