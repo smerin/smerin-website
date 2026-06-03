@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: TrackPageProps): Promise<Meta
       images: track.coverArt
         ? [
             {
-              url: track.coverArt,
-              width: 400,
-              height: 400,
+              url: `/_next/image?url=${encodeURIComponent(track.coverArt)}&w=1200&q=80`,
+              width: 1200,
+              height: 1200,
               alt: `${track.title} cover art`,
             },
           ]
