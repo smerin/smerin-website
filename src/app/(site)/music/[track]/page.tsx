@@ -1,14 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { IoGiftSharp } from 'react-icons/io5';
+import Link from 'next/link';
+import { FaHeadphones } from 'react-icons/fa';
 
 import { getTrackBySlug, getAllTrackSlugs } from '@/lib/tracks';
-
-import ActionButton from '@/components/ActionButton';
-import PlatformLogo from '@/components/PlatformLogo';
-import SocialIcons from '@/components/SocialIcons';
-import TrackLink from '@/components/TrackLink';
 
 import styles from './page.module.css';
 
@@ -63,8 +59,8 @@ export default async function TrackPage({ params }: TrackPageProps) {
   }
 
   return (
-    <div className={styles.page}>
-      <div className={styles.container}>
+    <>
+      <div className={styles.banner}>
         <div className={styles.coverArt}>
           <Image
             src={track.coverArt}
@@ -74,33 +70,19 @@ export default async function TrackPage({ params }: TrackPageProps) {
             priority
           />
         </div>
-
-        <div className={styles.links}>
-          {track.links.map((link) => (
-            <TrackLink
-              key={link.platform}
-              href={link.url}
-              platform={link.platform}
-              className={styles.platformLink}
-            >
-              <span className={styles.logoWrapper}>
-                <PlatformLogo platform={link.icon} height={36} />
-              </span>
-              <ActionButton action={link.action} className={styles.actionButton} />
-            </TrackLink>
-          ))}
-          <TrackLink
-            href="https://donate.stripe.com/fZu6oJ7SJ6x5aRhdYJ0x200"
-            platform="Stripe"
-            className={styles.supportButton}
-          >
-            <IoGiftSharp size={20} />
-            Support my work
-          </TrackLink>
-        </div>
-
-        <SocialIcons className={styles.socials} />
       </div>
-    </div>
+      <div className="container">
+        <div className={styles.content}>
+          <h1>{track.title}</h1>
+          {track.description && <p className={styles.description}>{track.description}</p>}
+          <Link href={`/listen/${slug}`} className="button">
+            <span className="icon">
+              <FaHeadphones />
+            </span>
+            Listen now
+          </Link>
+        </div>
+      </div>
+    </>
   );
 }
