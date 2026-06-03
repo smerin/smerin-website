@@ -18,10 +18,7 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Smerin | Musician and producer from Bristol, UK',
-    template: '%s | Smerin',
-  },
+  title: 'Smerin | Musician and producer from Bristol, UK',
   description:
     'Welcome to the website of Smerin, musician and producer from Bristol (UK).',
   metadataBase: new URL('https://smerin.com'),
