@@ -1,0 +1,52 @@
+# George Smerin
+
+> Musician, producer, and web developer from Bristol, UK
+
+## About
+
+George Smerin is a musician and producer based in Bristol, United Kingdom. He plays guitar and kora (a 21-string West African harp), with musical influences spanning world music traditions from West Africa, Brazil, and beyond.
+
+In 2001, George founded Smerin's Anti-Social Club, a band that has become a regular on the UK festival circuit, known for their eclectic blend of world music influences.
+
+As a solo artist, George releases music under the name "Smerin", producing electronic and acoustic tracks that incorporate instruments from around the world.
+
+## Music
+
+- **Instruments**: Guitar, kora (West African harp), ronroco (South American stringed instrument)
+- **Genres**: World music, electronica, acoustic
+- **Band**: Smerin's Anti-Social Club (founded 2001)
+- **Solo project**: Smerin
+
+### Latest Release
+
+"Latitudes" - A dreamy electronic track built around the ronroco, a beautifully resonant instrument from South America.
+
+## Blog Topics
+
+The blog features articles about:
+- Kora playing and West African music traditions
+- Travels to Senegal and The Gambia
+- Profiles of West African musicians (Mafu Conteh, Watcha, Alia balafon)
+- Traditional African instruments (akonting, kamale ngoni, balafon)
+- Guitar and world music tutorials
+
+## Links
+
+- Website: https://smerin.com
+- Facebook: https://facebook.com/smerin
+- YouTube: https://youtube.com/smerin
+- Instagram: https://instagram.com/smerin
+- Bandcamp: https://smerin.bandcamp.com
+- Spotify: https://open.spotify.com/artist/smerin
+
+## Contact
+
+For inquiries, visit https://smerin.com
+
+## Site Structure
+
+- `/` - Homepage with latest releases and blog posts
+- `/music` - Music page with background and streaming links
+- `/music/[track]` - Individual track landing pages
+- `/websites` - Web development portfolio
+- `/[slug]` - Blog posts about music and travel
